@@ -104,7 +104,6 @@ const Content = (props) => {
 
     const handleSubmit = () => {
         setLoading(true);
-        console.log(searcBy, searchText);
         let newList = [];
         //This Segment Filters By Location
         if (searcBy === 'Select A Location') {

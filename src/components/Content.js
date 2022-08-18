@@ -116,7 +116,7 @@ const Content = (props) => {
         //And now by Title
         if (!_.isEmpty(searchText)) {
             newList = _.filter(newList, (o)=> {
-                 return o.title.indexOf(searchText)>-1;
+                 return _.toLower(o.title).indexOf(_.toLower(searchText))>-1;
             })
         }
         setFilteredList(newList);

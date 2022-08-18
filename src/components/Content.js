@@ -180,7 +180,7 @@ const Content = (props) => {
                                     <CardActionArea>
                                         <CardContent>
                                             <Typography color="textSecondary" gutterBottom>
-                                                {job.title}
+                                                {job.title.substring(0, 40)}
                                             </Typography>
                                             <Typography variant="subtitle2" component="p">
                                                 {job.location.name}

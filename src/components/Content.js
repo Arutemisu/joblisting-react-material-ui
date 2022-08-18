@@ -171,7 +171,7 @@ const Content = (props) => {
                         >Search</Button>
                     </form>
                 </div>}
-                {!loading && <Typography component="div" style={{ backgroundColor: 'white' }} >
+                {!loading && filteredList && <Typography component="div" style={{ backgroundColor: 'white' }} >
                     <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
                         {_.map(filteredList, (job) => {
                             return (
